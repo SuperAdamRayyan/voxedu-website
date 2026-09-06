@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VoxEdu — Every Voice Matters</title>
+
+  <meta
+    name="description"
+    content="VoxEdu is a student voice and school support platform designed to help students communicate safely and schools respond effectively."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #f6f8ff;
+      color: #18233b;
+    }
+
+    /* NAVIGATION */
+    nav {
+      height: 76px;
+      padding: 0 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      border-bottom: 1px solid #e9ecf5;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      color: #5b5fe9;
+    }
+
+    nav a {
+      color: #556078;
+      text-decoration: none;
+      margin-left: 28px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #5b5fe9;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 72vh;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          #dce1ff 0,
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #f8f9ff,
+          #eef1ff
+        );
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e8e9ff;
+      color: #5257d8;
+      padding: 9px 15px;
+      border-radius: 50px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      color: #5b5fe9;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #65708a;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #5b5fe9;
+      color: white;
+      text-decoration: none;
+      padding: 16px 25px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(91, 95, 233, .25);
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px rgba(91, 95, 233, .30);
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 80px 8%;
+      text-align: center;
+      background: white;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      color: #69738a;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 70px 8%;
+      text-align: center;
+      background: #f6f8ff;
+    }
+
+    .contact h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .contact > p {
+      color: #69738a;
+      margin-bottom: 30px;
+    }
+
+    .contact-box {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border: 1px solid #e6e9f4;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(25, 35, 70, .06);
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      color: #606b82;
+    }
+
+    .contact-box a {
+      color: #5b5fe9;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #151b2d;
+      color: #aeb6cb;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+
+      nav .links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      footer a {
+        margin: 0 15px 0 0;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+
+    <div class="logo">
+      VoxEdu
+    </div>
+
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="tag">
+        A safer voice for every student
+      </div>
+
+      <h1>
+        Every Voice
+        <span>Matters.</span>
+      </h1>
+
+      <p>
+        VoxEdu is a student voice and school support platform
+        designed to make communication between students and
+        educators safer, simpler and more responsive.
+      </p>
+
+      <!-- We will connect this to the Apps Script web app later -->
+      <a class="button" href="#">
+        Launch VoxEdu →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <h2>
+      Listen. Respond. Improve.
+    </h2>
+
+    <p>
+      VoxEdu provides dedicated channels for discipline,
+      counselling, facilities and student suggestions —
+      helping schools move from simply receiving problems
+      to responding to them effectively.
+    </p>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <h2>
+      Contact VoxEdu
+    </h2>
+
+    <p>
+      Have a question, feedback or need assistance?
+      Get in touch with us.
+    </p>
+
+    <div class="contact-box">
+
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:adamrayyan3108@gmail.com">
+          adamrayyan3108@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Phone</strong><br>
+        <a href="tel:+60123562501">
+          +60 12-356 2501
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div>
+      <strong>VoxEdu</strong><br>
+      © 2026 VoxEdu
+    </div>
+
+    <div>
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms.html">
+        Terms of Service
+      </a>
+    </div>
+
+  </footer>
+
+</body>
+</html>
